@@ -10,7 +10,7 @@ body{
 }
 
 /* Forma de Fundo */
-.fundo {
+.container {
     background-color: #5b1f00;
     width: 700px;
     height: 350px;
@@ -19,26 +19,80 @@ body{
     margin: 20px;
     border-radius: 10px;
     transition: 0.5s;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
-.fundo:hover{
+.container:hover{
     background-color: #874421;
 }
 
 .perfil {
     text-align: center;
     width: 250px;
-    height: 300px;
-    margin: 5px;
+    height: 285px;
+    padding: 5px;
     color: #f4a460;
-    display: line;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgspace {
+    height: 150px;
+    width: 150px;
+    border-radius: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+#img {
+    background-image: url("../img/Foto.jpeg");
+}
+
+.nome {
+    height: auto;
+    width: 250px;
+    margin: 20px;
 }
 
 .info {
-    display: line;
+    color: #fff;
+    text-align: left;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .lista {
     list-style: none;
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+
+.lista li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.redes {
+    height: 60px;
+    width: 368px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.redes img {
+    width: auto;
+    height: 25px;
 }
