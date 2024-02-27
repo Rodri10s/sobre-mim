@@ -9,6 +9,14 @@ body{
     background-color: #0c0000;
 }
 
+.background{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* Forma de Fundo */
 .container {
     background-color: #260000;
